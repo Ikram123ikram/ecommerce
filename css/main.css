@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
+#nav-bars {
+    display: none;
+}
+
+#nav-li {
+    color: black;
+}
+
+#height {
+    color: #D61C4E;
+}
+
+#tech {
+    color: #293462;
+}
+
+#bbars {
+    display: none;
+}
+
+#up_down {
+    width: 20px;
+}
+
+#x_btn {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    #bbars {
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+    #bbars {
+        display: block;
+    }
+    #nav-bars {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e9ecef;
+        padding-top: 9vh;
+    }
+    #nav-li {
+        font-size: 45px;
+        width: 100vw;
+        display: flex;
+        padding: 2vh 0 2vh 5vh;
+    }
+    #nav-li:hover {
+        background-color: #dee2e6;
+    }
+    #up_down {
+        width: 35px;
+    }
+    #x_btn {
+        display: flex;
+        position: fixed;
+        top: 3vh;
+        right: 3vw;
+    }
+}
+
+@media (max-width: 575px) {
+    #nav-default {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    #nav-bars {
+        display: none;
+    }
+}
+
+
+/*section*/
+
+section {
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.hero {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    min-height: 60vh;
+    padding: 190px 0 60px 0;
+}
+
+.hero h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+}
+
+.hero h2 span {
+    color: var(--color-primary);
+}
+
+.hero p {
+    color: #4f4f5a;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.hero .btn-book-a-table {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: black;
+    background: #f85480;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+}
+
+.hero .btn-book-a-table:hover {
+    background: #f02a5f;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+.hero .btn-watch-video {
+    font-size: 16px;
+    transition: 0.5s;
+    margin-left: 25px;
+    color: var(--font-secondary);
+    font-weight: 600;
+}
+
+.hero .btn-watch-video i {
+    color: var(--color-primary);
+    font-size: 32px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-right: 8px;
+}
+
+.hero .btn-watch-video:hover {
+    color: var(--color-primary);
+}
+
+.hero .btn-watch-video:hover i {
+    color: rgba(206, 18, 18, 0.8);
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding-top: 160px;
+    }
+    .hero h2 {
+        font-size: 36px;
+    }
+    .hero .btn-get-started,
+    .hero .btn-watch-video {
+        font-size: 14px;
+    }
+    #img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}
